@@ -1,0 +1,110 @@
+.projects-bg {
+  background: var(--neutral-color-10);
+  padding: 40px 0px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 62px max-content 62px;
+  gap: 120px;
+  position: relative;
+}
+.projects::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 32px; /* Controla a posição vertical */
+  left: -12px;
+  width: 2px; /* Largura da "borda" */
+  height: 94%; /* Altura personalizada */
+  background-color: var(--neutral-color-09); /* Cor da "borda" */
+}
+.projects .tag-top::before {
+  content: "";
+  position: absolute;
+  left: -84px;
+  width: 66px;
+  height: 36px;
+  background: url(../../assets/images/project-page-number.png);
+}
+.projects .tag-bottom::before {
+  content: "";
+  position: absolute;
+  left: -84px;
+  width: 66px;
+  height: 36px;
+  background: url(../../assets/images/page-number-closer.png) no-repeat center
+    center;
+}
+/*Projects left side*/
+.projects__content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 80px;
+}
+.projects__content h2 {
+  max-width: 12ch;
+  grid-column: 1;
+  grid-row: 2 / -3;
+  margin-bottom: 80px;
+  position: relative;
+}
+.projects__content h2 a {
+  position: relative;
+}
+.projects__content h2 a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -24px;
+  left: -34px;
+  width: 24px;
+  height: 24px;
+  background: url(../../assets/images/link-icon.png);
+}
+.projects__content h2 span {
+  font: 600 3.5rem/1.3 "Fira Sans", sans-serif;
+  color: var(--neutral-color-01);
+  transition: 0.3s;
+}
+
+.projects__content .github__link a {
+  margin-bottom: 12px;
+  text-decoration: underline;
+}
+.projects__content .github__link a {
+  justify-self: start;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.projects__content h2:hover span,
+.projects__content .github__link a:hover {
+  color: var(--primary-color-04);
+}
+
+.github__description {
+  max-width: 25ch;
+}
+/**Projects right side*/
+.projects__cards {
+  display: flex;
+  flex-direction: column;
+}
+.projects__cards .card ~ .card {
+  margin-top: 40px;
+}
+.projects__cards .card {
+  padding: 0;
+}
+.projects__cards a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 32px 40px 20px 40px;
+}
+.projects__cards h3,
+.projects__cards p {
+  margin-bottom: 20px;
+}

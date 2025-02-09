@@ -1,9 +1,10 @@
 .main-bg {
   background: var(--neutral-color-11);
+  padding-bottom: 40px;
 }
 .main {
   padding-top: 140px;
-  padding-bottom: 180px;
+  padding-bottom: 220px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }

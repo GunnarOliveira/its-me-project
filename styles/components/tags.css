@@ -1,0 +1,15 @@
+.tags {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 62px;
+  position: relative;
+}
+.tag-top {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+.tag-bottom {
+  grid-column: 1 / -1;
+  grid-row: 3;
+}

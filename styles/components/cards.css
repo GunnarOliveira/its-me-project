@@ -1,0 +1,52 @@
+.card {
+  max-width: 480px;
+  padding: 32px 40px 20px 40px;
+  border-radius: 4px;
+  border: 2px solid var(--neutral-color-03);
+  background: var(--neutral-color-03);
+  position: relative;
+  transition: 0.3s;
+}
+.card:hover {
+  border: 2px solid var(--primary-color-04);
+  background-color: transparent;
+}
+.card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -6px;
+  width: 12px;
+  height: 20px;
+  border-radius: 2px;
+  background: var(--primary-color-04);
+}
+.card h3 {
+  color: var(--neutral-color-11);
+}
+.card:hover h3 {
+  color: var(--neutral-color-01);
+}
+.card p {
+  color: var(--neutral-color-08);
+}
+.card:hover p {
+  color: var(--neutral-color-04);
+}
+.card__badges-container {
+  display: flex;
+  gap: 12px;
+}
+.card__badges {
+  padding: 8px;
+  background: var(--neutral-color-09);
+  color: var(--neutral-color-01);
+  font: 700 1rem/1.25 "Fira Sans", sans-serif;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.card:hover .card__badges {
+  color: var(--neutral-color-10);
+  background: var(--neutral-color-01);
+}
