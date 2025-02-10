@@ -17,6 +17,7 @@
 }
 .main__intro {
   justify-self: start;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,6 +88,14 @@
   height: 16px;
   border-radius: 4px;
   background: linear-gradient(#9b91ee, #6d62c4);
+}
+@media (min-width: 800px) and (max-width: 1250px) {
+  .main__content {
+    padding-top: 80px;
+  }
+  .main__content__description {
+    font-size: 3.2rem;
+  }
 }
 @media (max-width: 800px) {
   .main__intro .name span {

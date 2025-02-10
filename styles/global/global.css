@@ -13,3 +13,27 @@ img {
   background: var(--primary-color-03);
   color: #ffffff;
 }
+@media (min-width: 500px) {
+  ::-webkit-scrollbar {
+    width: 8px; /* Largura da barra vertical */
+    height: 8px; /* Altura da barra horizontal */
+  }
+
+  /* Alvo: O "track" (trilha) da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background: var(--neutral-color-05); /* Cor de fundo da trilha */
+    border-radius: 12px; /* Borda arredondada do track */
+  }
+
+  /* Alvo: O "thumb" (botão deslizante) da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background: var(--neutral-color-07); /* Cor do botão deslizante */
+    border-radius: 12px; /* Borda arredondada do thumb */
+    cursor: grabbing;
+  }
+
+  /* Alvo: O "thumb" quando o usuário passa o mouse sobre ele */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--neutral-color-08); /* Altera a cor ao passar o mouse */
+  }
+}
