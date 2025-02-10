@@ -89,7 +89,7 @@
   border-radius: 4px;
   background: linear-gradient(#9b91ee, #6d62c4);
 }
-@media (min-width: 800px) and (max-width: 1250px) {
+@media (min-width: 800px) and (max-width: 1100px) {
   .main__content {
     padding-top: 80px;
   }
