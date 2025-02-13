@@ -22,13 +22,11 @@ img {
   /* Alvo: O "track" (trilha) da barra de rolagem */
   ::-webkit-scrollbar-track {
     background: var(--neutral-color-05); /* Cor de fundo da trilha */
-    border-radius: 12px; /* Borda arredondada do track */
   }
 
   /* Alvo: O "thumb" (botão deslizante) da barra de rolagem */
   ::-webkit-scrollbar-thumb {
     background: var(--neutral-color-07); /* Cor do botão deslizante */
-    border-radius: 12px; /* Borda arredondada do thumb */
     cursor: grabbing;
   }
 

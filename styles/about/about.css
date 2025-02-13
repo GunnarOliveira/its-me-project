@@ -19,10 +19,10 @@
   content: "";
   display: block;
   position: absolute;
-  top: 32px; /* Controla a posição vertical */
+  top: 36px; /* Controla a posição vertical */
   left: -12px;
   width: 2px; /* Largura da "borda" */
-  height: 94%; /* Altura personalizada */
+  height: 96%; /* Altura personalizada */
   background-color: var(--neutral-color-09); /* Cor da "borda" */
 }
 .about .tag-top::before {
