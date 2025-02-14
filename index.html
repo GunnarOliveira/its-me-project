@@ -288,35 +288,43 @@
               </li>
             </ul>
           </div>
-          <form action="">
-            <label class="font-01-sm-smb neutral-color-09" for="name"
-              >Name</label
-            >
+          <form action="/submit-form" method="POST">
+            <label class="font-01-sm-smb neutral-color-09" for="name">
+              Name
+            </label>
             <input
               type="text"
               name="name"
               id="name"
               placeholder="Enter your name"
+              required
+              pattern="^[a-zA-Z\s]{3,50}$"
             />
-            <label class="font-01-sm-smb neutral-color-09" for="email"
-              >Email</label
-            >
+
+            <label class="font-01-sm-smb neutral-color-09" for="email">
+              Email
+            </label>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Enter your email"
+              required
             />
-            <label class="font-01-sm-smb neutral-color-09" for="name"
-              >Details</label
-            >
+
+            <label class="font-01-sm-smb neutral-color-09" for="details">
+              Details
+            </label>
             <input
               type="text"
               name="details"
               id="details"
               placeholder="Enter your Project Details"
+              required
+              maxlength="100"
             />
-            <button>Send Message</button>
+
+            <button type="submit">Send Message</button>
           </form>
           <div class="tags tag-bottom">
             <img src="./assets/images/contact-tag-bottom.png" alt="Projects" />

@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 62px max-content 62px;
-  gap: 120px 0px;
+  gap: 120px 60px;
   position: relative;
 }
 
@@ -68,6 +68,12 @@
   display: flex;
   max-width: 400px;
   gap: 40px;
+}
+.contact__social-links li a {
+  transition: 0.3s;
+}
+.contact__social-links li a:hover {
+  transform: scale(1.2);
 }
 .contact__content svg {
   fill: blue;
