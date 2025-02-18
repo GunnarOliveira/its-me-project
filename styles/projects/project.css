@@ -130,7 +130,7 @@
 }
 @media (max-width: 800px) {
   .projects__cards {
-    max-width: 800px;
+    max-width: 900px;
     flex-direction: row;
     overflow-x: scroll;
     gap: 40px;

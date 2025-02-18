@@ -19,3 +19,5 @@
 @import url(./about/about.css);
 /*Contact*/
 @import url(./contact/contact.css);
+/*Footer*/
+@import url(./components/footer.css);

@@ -1,0 +1,20 @@
+.footer-bg {
+  background: var(--neutral-color-11);
+}
+.footer nav ul li,
+.footer nav ul {
+  max-width: max-content;
+}
+.footer nav ul {
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  padding: 30px 0px;
+}
+.footer nav ul li a {
+  padding: 10px 0px;
+  transition: 0.3s;
+}
+.footer nav ul li a:hover span {
+  color: var(--primary-color-04);
+}
